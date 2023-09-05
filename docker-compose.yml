@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  playground:
+    # change the version as subject
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: playground
+    volumes:
+      - type: bind
+        source: .
+        target: /app
+    working_dir: /app
+
+
+

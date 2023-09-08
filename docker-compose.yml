@@ -1,8 +1,8 @@
+# playground for java 11
 version: '3.8'
 
 services:
   playground:
-    # change the version as subject
     build:
       context: .
       dockerfile: ./Dockerfile

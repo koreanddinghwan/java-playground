@@ -1,3 +1,3 @@
-FROM openjdk:11
+FROM openjdk:17
 
 CMD ["tail", "-f", "/dev/null"]

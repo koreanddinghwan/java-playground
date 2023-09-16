@@ -1,5 +1,5 @@
 # playground for java 11
-version: '3.8'
+version: "3.8"
 
 services:
   playground:
@@ -12,6 +12,3 @@ services:
         source: .
         target: /app
     working_dir: /app
-
-
-

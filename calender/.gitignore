@@ -6,4 +6,4 @@
 .gradle/
 .DS_Store
 
-target/
+target/*

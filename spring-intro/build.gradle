@@ -1,0 +1,32 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.1.4'
+	id 'io.spring.dependency-management' version '1.1.3'
+}
+
+group = 'hello'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '17'
+}
+
+repositories {
+	// Maven Central: repository for dependencies
+	mavenCentral()
+}
+
+dependencies {
+	// hot reload
+	developmentOnly "org.springframework.boot:spring-boot-devtools"
+	// Thymeleaf: template engine
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	// Spring Web: build web, including RESTful, Spring MVC
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	// Testing: JUnit
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

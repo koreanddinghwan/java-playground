@@ -19,7 +19,6 @@ services:
 
   spring_intro:
     build:
-      context: .
       dockerfile: ./spring-intro/Dockerfile
     container_name: spring_intro
     ports:

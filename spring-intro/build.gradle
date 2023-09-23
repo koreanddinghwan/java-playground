@@ -18,12 +18,11 @@ repositories {
 
 dependencies {
 	// hot reload
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	developmentOnly "org.springframework.boot:spring-boot-devtools"
 	// Thymeleaf: template engine
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	// Spring Web: build web, including RESTful, Spring MVC
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-
 	// Testing: JUnit
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

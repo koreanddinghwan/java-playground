@@ -1,9 +1,0 @@
-# Compiled class file
-*.class
-
-.idea/
-.vim/
-.gradle/
-.DS_Store
-
-target/

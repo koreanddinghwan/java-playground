@@ -17,6 +17,21 @@ services:
     networks:
       - spring_test
 
+  spring_intro:
+    build:
+      context: .
+      dockerfile: ./spring-intro/Dockerfile
+    container_name: spring_intro
+    ports:
+      - "10011:8080"
+    volumes:
+      - type: bind
+        source: ./spring-intro
+        target: /app
+    working_dir: /app
+    networks:
+      - spring_test
+
   mysql:
     container_name: spring_mysql
     image: mysql
